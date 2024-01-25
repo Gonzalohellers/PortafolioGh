@@ -1,0 +1,117 @@
+.tecnologias{
+    background-color: rgba(17, 17, 17, 0.774);
+    min-height: 50vh;
+}
+.tecnologias h3{
+    text-align: center;
+    font-size: 48px;
+}
+
+.tecnolotrix{
+    position: relative;
+    max-width: 100%;
+}
+
+.iconoTrix{
+    position : absolute;
+    max-height: 150px;
+}
+.iconoTrix:nth-child(1){
+    left:10%;
+    margin-top:25px;
+    margin-left: 21px;
+}
+.iconoTrix:nth-child(2){
+    left: 25%;
+    margin-top:25px;
+} 
+.iconoTrix:nth-child(7){
+    right: 10%;
+    margin-top:25px;
+}
+.iconoTrix:nth-child(6){
+    right: 25%;
+}
+
+.sqre {
+	position: absolute;
+	left: 42.9%;
+	width: 150px;
+	height: 150px;
+	background: rgb(2, 243, 2);
+    z-index: 10;
+}
+.sqr{
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+  top: 5px;
+}
+.sqr2{
+    clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+    top: -5px;
+
+}
+
+
+.circl {
+	position: absolute;
+    top:-2.5rem;
+    left: 40%;
+    width: 225px;
+	height: 225px;
+	background: #000000;
+	border-radius: 50%;
+    z-index: 0;
+}
+
+.seleccionado{
+    left: 43% !important;  
+    z-index: 20;
+    background-color: rgb(1, 255, 1);
+    border-radius: 50%;
+}
+
+
+@media(max-width:600px){
+    .iconoTrix{
+        max-height: 48px !important;
+        max-width: 80px;
+    }
+    .sqre{
+        width: 50px;
+        height: 50px;
+        left:45%;
+    }
+    .circl{
+        width: 75px;
+        height: 75px;
+        top: -1.2rem;
+    left: 42%;
+    }
+
+}
+
+.clickeado{
+    transition: all;
+    transition-duration: 300ms;
+    left: 50%;
+}
+
+@media (min-width:600px) and (max-width:1000px) {
+    .iconoTrix{
+        max-height: 65px !important;
+        max-width: 113px;
+    }
+    .sqre{
+        width: 70px;
+        height: 70px;
+        top:-1px;
+        left: 48%;
+    }
+    .circl{
+        width: 110px;
+        height: 110px;
+        top: -1.2rem;
+    left: 45%;
+    }
+   
+}

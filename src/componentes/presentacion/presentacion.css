@@ -1,0 +1,130 @@
+*{
+    max-width: 100vw;
+}
+
+.Presentacion {
+    max-height: 150vh;
+    background-image: linear-gradient(0deg, #2d2d33ce, #242424);
+    font-size: 75px;
+    width: 100%;    
+}
+.img{
+    max-width: 300px;
+    max-height: 300px; 
+}
+.imagen{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 100%;
+}
+.informacion{  
+    height: 90vh;
+    background-color: rgba(240, 248, 255, 0.007);
+	padding: 0 10vw;
+    padding-top:22vh;
+    min-height: 50vh;
+    z-index: 1;
+}
+@media (width<500px) {
+    .informacion{
+        background-color:rgba(255, 255, 255, 0)
+    }
+}
+
+.imagenP{
+    position: relative;
+
+    align-items: center;
+    justify-items: center;
+	display:grid;
+    grid-template-columns: 60% 40%;
+
+    background-color: rgba(22, 22, 22, 0.863);}
+
+.muchoTexto h1{
+    font-family: Candal, sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 104, 240);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+.muchoTexto{
+    padding: 1.5vh 0;
+}
+
+.muchoTexto p{
+    font-size: 1rem;
+    color:white;
+    padding: 0 0 0 5vh;
+}
+
+.pPresentacion{
+
+    text-indent: 1rem;
+    padding: 0.5rem 1rem 0 1rem;
+}
+h1{
+    font-size: 25px !important;
+    margin-left: 11vw;
+}
+/*flecha*/
+.arrow{
+    position: absolute;
+    font-size: 90px;
+    margin-left: 45vw;
+    opacity: 0;
+    animation:opac;
+    animation-duration: 4s;
+    animation-iteration-count:infinite ;
+    animation-direction: reverse;
+}
+.arrow1{ 
+    bottom: 70px;
+    animation-delay: 0ms;
+}
+
+.arrow2{
+    bottom: 40px;
+    animation-delay: 300ms;
+}
+
+.arrow3{
+    bottom: 10px;
+    animation-delay: 600ms;
+   
+}
+
+@keyframes opac {
+    0%{opacity: 0;}
+    100%{
+        opacity:1;
+    }
+
+}
+
+@media(width<500px){
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        padding:4rem 0;
+        max-width: 100vw;
+    }
+    .imagenP{
+        display: block;
+        max-width: 100vw;
+    }
+    .muchoTexto h1{  white-space: initial;
+        margin: 20px 5px;
+    }
+    .pPresentacion{
+
+        padding: 5px !important;
+        max-width: 100vw;
+        vertical-align: center;
+    }
+
+    .img{
+        margin-left: 20%;
+    }
+    
+}
