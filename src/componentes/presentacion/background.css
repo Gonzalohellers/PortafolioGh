@@ -43,4 +43,7 @@
 	.backMain{
 		display:none;
 	}
+	.arrow{
+		display: none;
+	}
 }

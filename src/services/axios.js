@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let url="http://localhost:6060/materias";
+let url="http://localhost:6060/api/materias";
 
 function getAll(){
     return axios.get(url)

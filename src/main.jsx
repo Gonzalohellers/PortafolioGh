@@ -10,18 +10,24 @@ import {
 } from "react-router-dom";
 import ErrorPage from './error/routerError'
 import LoginForm from './componentes/logIn/login'
+import RegisterForm from './componentes/register/register'
 import Tecnolotrix from './componentes/tecnolotrix/tecnolotrix'
+import Contacto from "./componentes/contacto/contacto"
 import Footer from './componentes/footer/footer'
-
+import { Analytics } from '@vercel/analytics/react';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<>  <Nav />
-    <Presentacion />
-    <Educacion />
-    <Tecnolotrix />
-    <Footer />
+    element: 
+    <>  
+      <Nav />
+      <Presentacion />
+      <Educacion />
+      <Tecnolotrix />
+      <Contacto />
+      <Footer />
+      <Analytics />
     </>,
     errorElement: <ErrorPage />,
   },
@@ -29,12 +35,16 @@ const router = createBrowserRouter([
     path: "login/",
     element: <LoginForm />,
   },
+  {
+    path: "register/",
+    element: <RegisterForm />,
+  },
 ]);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <RouterProvider router={router} />
-   
+    <RouterProvider router={router} />
+
   </React.StrictMode>,
 )

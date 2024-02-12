@@ -15,7 +15,7 @@ function useScroll() {
     };
   }, []);
 
-  return isScrolled;
+  return isScrolled
 }
 
 export default useScroll

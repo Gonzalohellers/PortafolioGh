@@ -1,36 +1,56 @@
 .tecnologias{
-    background-color: rgba(17, 17, 17, 0.774);
+    background-color: rgba(17, 17, 17, 0.932);
     min-height: 50vh;
 }
 .tecnologias h3{
+    color: rgb(231, 230, 230);
     text-align: center;
     font-size: 48px;
 }
 
 .tecnolotrix{
     position: relative;
-    max-width: 100%;
+    width: 100%;
+    height: 250px;
 }
 
 .iconoTrix{
     position : absolute;
     max-height: 150px;
+    transition-duration: 200ms;
+
 }
+
+
 .iconoTrix:nth-child(1){
+    z-index: 30;
+ 
     left:10%;
     margin-top:25px;
     margin-left: 21px;
+    transition-duration: 200ms;
+
 }
 .iconoTrix:nth-child(2){
+    z-index: 30;
+ 
     left: 25%;
     margin-top:25px;
+    transition-duration: 200ms;
+
 } 
 .iconoTrix:nth-child(7){
     right: 10%;
-    margin-top:25px;
+    margin-top:-1px;
+    width: 140px;
+    transition-duration: 200ms;
+
+    
 }
 .iconoTrix:nth-child(6){
     right: 25%;
+    transition-duration: 200ms;
+
 }
 
 .sqre {
@@ -64,54 +84,82 @@
 }
 
 .seleccionado{
+    position: absolute;
     left: 43% !important;  
     z-index: 20;
     background-color: rgb(1, 255, 1);
+    size:50px;
     border-radius: 50%;
 }
 
-
-@media(max-width:600px){
-    .iconoTrix{
-        max-height: 48px !important;
-        max-width: 80px;
-    }
-    .sqre{
-        width: 50px;
-        height: 50px;
-        left:45%;
-    }
-    .circl{
-        width: 75px;
-        height: 75px;
-        top: -1.2rem;
-    left: 42%;
-    }
-
+.info{
+   transition-duration: 300ms;
+   opacity: 1;
+    display:block;
+    font-family: monospace;
+    white-space:nowrap;
+    border-right: 4px solid;
+    text-align: center;
+    width: 100%;
 }
 
-.clickeado{
-    transition: all;
-    transition-duration: 300ms;
-    left: 50%;
+.escribiendo{
+    animation: typing 1s, blink .5s infinite step-end alternate;
 }
 
-@media (min-width:600px) and (max-width:1000px) {
-    .iconoTrix{
-        max-height: 65px !important;
-        max-width: 113px;
+.achedos{
+        color: whitesmoke !important;
+}
+
+@keyframes typing{
+    from {
+        opacity: 0; /* Opacidad inicial: 0 */
     }
-    .sqre{
-        width: 70px;
-        height: 70px;
-        top:-1px;
-        left: 48%;
+    to {
+        opacity: 1; /* Opacidad final: 1 */
     }
-    .circl{
-        width: 110px;
-        height: 110px;
-        top: -1.2rem;
-    left: 45%;
+}
+
+@keyframes blink{
+    100% {border-color: transparent;}
+}
+
+@media(width<1000px){
+    #educacion article{
+        gap: 20px;
+        background-color: #333333;
+        overflow: hidden;
+        height: auto;
+        width: 90vw;
     }
-   
+  .tecnolotrix{
+    height:auto
+  }
+  .segundiv{
+     width: 75vw; 
+     padding: 2rem; 
+     background-color: #333333; 
+     border-radius: 10px;
+  }
+ .achedos{
+
+    font-size: 20px;
+    font-weight: bold; 
+    text-align: center;
+ } 
+
+ .divimagen{
+    display: flex;
+    justify-content: center;
+ }
+
+ .divimagen img{
+    width: 150px;
+    height: auto;
+ }
+
+ .segundiv p{
+    text-align: justify;
+ }
+
 }
